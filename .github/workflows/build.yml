@@ -15,6 +15,8 @@ jobs:
         java-version: 1.8
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: Upgrade gradlew
+      run: ./gradlew wrapper --gradle-version 6.2.1
     - name: Build with Gradle
       run: ./gradlew aR
     - name: 'Upload AAR to Artifacts'
