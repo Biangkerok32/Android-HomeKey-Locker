@@ -1,7 +1,7 @@
 package io.github.homelocker.app;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.CompoundButton;
@@ -9,7 +9,7 @@ import android.widget.ToggleButton;
 
 import io.github.homelocker.lib.HomeKeyLocker;
 
-public class MainActivity extends ActionBarActivity implements CompoundButton.OnCheckedChangeListener {
+public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
     private ToggleButton mTbLock;
     private HomeKeyLocker mHomeKeyLocker;
